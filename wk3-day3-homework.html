@@ -101,14 +101,14 @@
 
   /* Integer */
 
-  function integerNum(num){
-    var integerNumber = Math.round(num);
-    document.getElementById("solution").innerHTML = 'The nearest whole number of ' + num + ' is ' + integerNumber;
+  function integerNumber(num) {
+      var integerNumber = Math.round(num);
+      document.getElementById("solution").innerHTML = 'The nearest whole number of ' + num + ' is ' + integerNumber;
   }
-
+      
   var integerButton = document.getElementById("int-button");
   integerButton.addEventListener("click", function() {
-    var num= document.getElementById("int-input").value;
+    var num = document.getElementById("int-input").value;
     integerNumber(num);
   });
 
